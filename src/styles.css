@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --color-black: #040930;
+  --color-blue: #2754dd;
+  --color-light-grey: #ededed;
+
+  --color-dark-grey: #5c5965;
+}
+
+.landing-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  /* justify-items: center; */
+  height: 100vh;
+}
+
+.left-container {
+  /* background-color: green; */
+  padding-left: 120px;
+  padding-right: 90px;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 35px;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-color: var(--color-blue);
+}
+
+.form-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.big-text {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  /* margin-right: 5px; */
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dates {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  /* display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%; */
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='date'] {
+  /* width: 100%; */
+  background-color: var(--color-light-grey);
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.destination {
+  padding: 17px 25px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--color-light-grey);
+}
+
+.submit-btn {
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: var(--color-black);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+input {
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
